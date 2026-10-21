@@ -1,0 +1,7 @@
+[
+  {"question":"Which language is used to structure the content of a web page?","options":["CSS","HTML","JavaScript","Python"],"answer":1,"explanation":"HTML (HyperText Markup Language) gives web pages their structure and content."},
+  {"question":"Which CSS property is used to change the text color?","options":["font-style","background-color","color","text-align"],"answer":2,"explanation":"The CSS color property sets the foreground color of text."},
+  {"question":"Which JavaScript keyword declares a block-scoped variable that can be reassigned?","options":["const","let","static","define"],"answer":1,"explanation":"Use let when a variable needs to be reassigned. const is for bindings that should not be reassigned."},
+  {"question":"What does CSS Flexbox help developers create?","options":["Database tables","Two-dimensional image files","One-dimensional layouts","Server APIs"],"answer":2,"explanation":"Flexbox is designed for arranging items in a row or a column."},
+  {"question":"Which HTML element is most appropriate for the main navigation links?","options":["<nav>","<footer>","<aside>","<strong>"],"answer":0,"explanation":"The semantic nav element identifies a section containing major navigation links."}
+]

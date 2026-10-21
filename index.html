@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10152b">
+  <meta name="description" content="A beautiful, responsive interactive quiz app built with HTML, CSS and JavaScript.">
+  <title>Quizora — Test Your Knowledge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Quizora home"><span class="brand-mark">Q</span><span>quizora</span></a>
+      <div class="top-note"><span class="live-dot"></span> LEARN SOMETHING NEW</div>
+    </header>
+
+    <section class="welcome screen active" id="welcome-screen" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> YOUR DAILY BRAIN BOOST</div>
+        <h1 id="welcome-title">A little quiz.<br><span>A lot of</span> knowledge.</h1>
+        <p class="intro">Challenge yourself with quick questions, learn as you go, and see how much you know.</p>
+        <div class="welcome-meta">
+          <div class="meta-icon">⏱</div><div><strong>5 questions</strong><small>About 2 minutes</small></div>
+          <div class="meta-divider"></div>
+          <div class="meta-icon">✦</div><div><strong>Instant feedback</strong><small>Learn every step</small></div>
+        </div>
+        <button class="primary-btn start-btn" id="start-btn">Start the quiz <span>→</span></button>
+        <p class="microcopy">No pressure. Just curiosity.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-card card-back"><span>✦</span></div>
+        <div class="hero-card card-front">
+          <div class="card-top"><span class="tiny-pill">DAILY QUIZ</span><span class="card-dots">•••</span></div>
+          <div class="question-symbol">?</div>
+          <div class="card-lines"><i></i><i></i><i></i></div>
+          <div class="mini-options"><b></b><b></b><b></b></div>
+          <div class="card-bottom"><span>KEEP LEARNING</span><span>01 / 05</span></div>
+        </div>
+        <div class="float-bubble bubble-one">✦</div><div class="float-bubble bubble-two">✓</div>
+        <div class="score-chip"><span>✧</span><div><strong>Stay curious</strong><small>Your next win awaits</small></div></div>
+      </div>
+    </section>
+
+    <section class="quiz screen" id="quiz-screen" aria-labelledby="question-title">
+      <div class="quiz-heading">
+        <div><div class="eyebrow">KNOWLEDGE CHECK</div><h2>Let's see what you know.</h2></div>
+        <div class="question-count" id="question-count">01 <span>/ 05</span></div>
+      </div>
+      <div class="progress-wrap"><div class="progress-label"><span>YOUR PROGRESS</span><span id="progress-percent">0%</span></div><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div></div>
+      <article class="question-card">
+        <div class="question-kicker"><span class="question-number" id="question-number">QUESTION 01</span><span class="difficulty">✦ QUICK THINK</span></div>
+        <h3 id="question-title">Loading question…</h3>
+        <p class="choose-label">CHOOSE ONE ANSWER</p>
+        <div class="answers" id="answers" role="group" aria-label="Answer choices"></div>
+        <div class="feedback" id="feedback" aria-live="polite" hidden></div>
+        <div class="quiz-footer"><span id="answer-hint">Select an answer to continue</span><button class="next-btn" id="next-btn" disabled>Next question <span>→</span></button></div>
+      </article>
+      <p class="bottom-tip">💡 <span>Take your time — every question is a chance to learn.</span></p>
+    </section>
+
+    <section class="result screen" id="result-screen" aria-labelledby="result-title">
+      <div class="result-confetti" aria-hidden="true">✦　✧　✦　✧　✦</div>
+      <div class="result-icon" id="result-icon">🏆</div>
+      <div class="eyebrow">QUIZ COMPLETED</div>
+      <h2 id="result-title">Look at you go!</h2>
+      <p class="result-subtitle" id="result-subtitle">You showed up, gave it a try, and learned something new.</p>
+      <div class="score-panel">
+        <div class="score-ring" id="score-ring"><div><strong id="final-score">0/5</strong><small>YOUR SCORE</small></div></div>
+        <div class="score-details"><div><span class="stat-dot correct-dot"></span><span>Correct answers</span><strong id="correct-count">0</strong></div><div><span class="stat-dot wrong-dot"></span><span>Need more practice</span><strong id="wrong-count">0</strong></div></div>
+      </div>
+      <div class="result-message" id="result-message">Every attempt makes you better. Keep going!</div>
+      <button class="primary-btn restart-btn" id="restart-btn">Try again <span>↻</span></button>
+      <button class="text-btn" id="review-btn">Review my answers</button>
+      <div class="review-list" id="review-list" hidden></div>
+    </section>
+
+    <footer class="site-footer"><span>© 2026 QUIZORA</span><span>BUILT TO MAKE LEARNING FEEL GOOD <b>✦</b></span></footer>
+  </main>
+</body>
+</html>
