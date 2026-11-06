@@ -42,8 +42,16 @@ Edit `questions.json` to add or change questions. Each question should contain:
 - `answer`: zero-based index of the correct option
 - `explanation`: short learning explanation
 
-## Screenshots for submission
-Capture the welcome screen, an answered question showing feedback, and the final results screen at mobile (375px), tablet (768px) and desktop (1280px or wider) widths.
+## Screenshots
+
+### Desktop View
+![Desktop Screenshot](desktop.png)
+
+### Tablet View
+![Tablet Screenshot](tablet.png)
+
+### Mobile View
+![Mobile Screenshot](mobile.png)
 
 ## Note
 Replace or expand the sample questions if your instructor expects a particular subject area. Test the published website and verify that all links work before submitting.
